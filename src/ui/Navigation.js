@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 
 const Navigation = class Navigation extends Component {
 	render() {
@@ -6,11 +7,11 @@ const Navigation = class Navigation extends Component {
 			<div id='navigation'>
 				<ul>
 					<li id="logo">vakarchuk</li>
-					<li className="navigation-section">home<div></div></li>
-					<li className="navigation-section">about<div></div></li>
-					<li className="navigation-section">experience<div></div></li>
-					<li className="navigation-section">projects<div></div></li>
-					<li className="navigation-section">contact<div></div></li>
+					<li className="navigation-section"><Link to="/home">home</Link><div></div></li>
+					<li className="navigation-section"><Link to="/about">about</Link><div></div></li>
+					<li className="navigation-section"><Link to="/experience">experience</Link><div></div></li>
+					<li className="navigation-section"><Link to="/projects">projects</Link><div></div></li>
+					<li className="navigation-section"><Link to="/contact">contact</Link><div></div></li>
 				</ul>	
 			</div>
 		)

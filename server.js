@@ -2,14 +2,17 @@ var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
 var config = require('./webpack.config');
-
-var app = new (require('express'))();
+var express = require('express');
+var app = new express();
 
 var compiler = webpack(config);
 
+app.use('/css', express.static(__dirname + '/static/css'));
+app.use('/img', express.static(__dirname + '/static/images'));
+
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }))
 app.use(webpackHotMiddleware(compiler));
-app.get("/", function(req, res) {
+app.get("*", function(req, res) {
 	res.sendFile(__dirname + '/index.html')
 })
 

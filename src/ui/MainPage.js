@@ -8,7 +8,7 @@ const MainPage = class MainPage extends Component {
 				<DarkLayer />
 				<div className='description'>
 					<div className='lvl-01'>Full Stack Web Developer</div>
-					<div className='lvl-02'></div>
+					<div className='lvl-02'>JavaScript (client-side / server-side)/ HTML / CSS </div>
 				</div>
 				<div className='title'>
 					Ilya Vakarchuk

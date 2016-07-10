@@ -51,7 +51,15 @@ body {
 				&.navigation-section {
 					text-transform: uppercase;
 					padding: 0 10px;
-					@include transition('color ease 0.5s');
+
+					a {
+						text-decoration: none;
+						@include transition('color ease 0.5s');
+						
+						&:link, &:visited, &:active {
+		          color: #fff;
+		        }
+					}
 
 					div {
 						width: 0;
@@ -65,7 +73,10 @@ body {
 
 					&:hover {
 						cursor: pointer;
-						color: #EC407A;
+						
+						a {
+							color: #EC407A;
+						}
 
 						div {
 							width: 100%;
