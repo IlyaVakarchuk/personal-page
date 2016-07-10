@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700);
 @import 'mixins';
 @import 'main';
+@import 'about';
 
 body {
 	margin: 0;
@@ -10,6 +11,7 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	font-family: 'Source Sans Pro', sans-serif;
+	@include user-select('none');
 
 	.dark-layer {
 		width: 100%;

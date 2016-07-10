@@ -3,6 +3,7 @@ import { Router, Route, browserHistory } from 'react-router'
 
 import MainPage from './MainPage';
 import Navigation from './Navigation';
+import About from './About';
 
 const AppLayout = class AppLayout extends Component {
 	render() {
@@ -27,7 +28,8 @@ export default class App extends Component {
 		return (
 			<Router history={browserHistory}>
         <Route path="/" component={ AppLayout } onEnter={ this.onCheck } >
-					<Route path="home" component={ MainPage }/>        	
+					<Route path="home" component={ MainPage }/>    
+					<Route path="about" component={ About }/>        	
         </Route>
       </Router>
 		)
