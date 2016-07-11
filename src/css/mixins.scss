@@ -11,3 +11,34 @@
   -ms-user-select: #{$value};    
   user-select: #{$value};
 }
+
+@mixin animation($value) {
+  -webkit-animation: #{$value};
+  -moz-animation: #{$value};
+  -o-animation: #{$value};
+  animation: #{$value};
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@include keyframes(show-progress-bar) {
+  0% {
+    width : 0;
+  }
+  100% {
+    width : 100%;
+  }
+}

@@ -1,0 +1,73 @@
+#skills-page {
+	width: 100%;
+	height: 100%;
+	padding-top: 60px;
+	background:linear-gradient(77deg,#27b193,#86aad5);
+
+	.languages {
+		width: 50%;
+		
+		.container {
+			width: 90%;
+			margin: 0 auto;
+			background-color: #fff;
+
+			.title {
+				width: 100%;
+				height: 30px;
+				margin: 0 auto;
+				background-color: #EC407A;
+				color: #fff;
+				text-transform: uppercase;
+				padding: 10px 0;
+				line-height: 30px;
+				font-size: 34px;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.skills-list {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				padding: 10px 0;
+				li {
+					display: block;
+					color: #fff;
+					border: 1px solid #EC407A;
+					margin: 10px;
+					margin-top: 5px;
+					margin-bottom: 5px;
+					border-radius: 50px;
+
+					.tech-title {
+						position: absolute;
+						z-index: 1;
+						text-transform: uppercase;
+					}
+
+					.progress-bar {
+						width: 0;
+						text-align: center;
+						padding: 2.5px;
+						position: relative;
+
+						.color-fill {
+							height: 100%;
+							background-color: #EC407A;
+							position: absolute;
+							top: 0;
+							left: 0;
+							border-radius: 50px 0 0 50px;
+							@include animation('show-progress-bar 1.4s forwards ease-in-out'); 
+						}
+						span {
+							position: relative;
+							z-index: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
