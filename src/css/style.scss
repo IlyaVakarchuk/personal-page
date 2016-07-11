@@ -39,6 +39,10 @@ body {
 			height: 100%;
 			text-align: right;
 
+			ul.site-sections {
+				display: block;
+			}
+
 			li {
 				height: 100%;
 				display: inline-block;
