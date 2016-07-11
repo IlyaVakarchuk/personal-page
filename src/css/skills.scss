@@ -4,10 +4,47 @@
 	padding-top: 60px;
 	background:linear-gradient(77deg,#27b193,#86aad5);
 
-	.languages {
-		width: 50%;
+	.intro {
+		width: 100%;
+		height: 50px;
+
+		div {
+			width: 50%;
+			height: 100%;
+			margin: 0 auto;
+			color: #EC407A;
+			font-size: 64px;
+			text-align: center;
+			line-height: 50px;
+			text-transform: lowercase;
+		}
+	}
+
+	.container {
+		max-width: 940px;
+		min-width: 940px;
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
+		top: 10%;
+
+		#table {
+			width: 50%;
+			display: inline-block;
+			float: left;
+		}	
+
+		#list {
+			width: 50%;
+			display: inline-block;
+			float: right;
+		}
+	}
+
+	.technology, .patterns {
+		width: 100%;
 		
-		.container {
+		.table {
 			width: 90%;
 			margin: 0 auto;
 			background-color: #fff;
@@ -72,5 +109,9 @@
 				}
 			}
 		}
+	}
+
+	.patterns {
+		margin-top: 15px;
 	}
 }
