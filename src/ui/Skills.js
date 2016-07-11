@@ -39,7 +39,9 @@ const Skills = class Skills extends Component {
 					</div>
 
 					<div id='list'>
-						<img src="img/skills-cloud.png" />
+					<object type="image/svg+xml" data="img/skills-cloud.svg" class="logo">
+					  <img src="img/skills-cloud.svg" />
+					</object>
 					</div>
 				</div>
 			</div>

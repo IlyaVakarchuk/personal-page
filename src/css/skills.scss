@@ -40,7 +40,7 @@
 			float: right;
 			height: 421px;
 
-			img {
+			img, object {
 				height: 100%;
 				@include animation('show-skills-cloud 1.5s forwards linear'); 
 			}

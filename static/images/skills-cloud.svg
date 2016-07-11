@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1024px" height="768px" viewBox="0 0 1024 768">
+<defs>
+  <style type="text/css">
+     @import url(https://fonts.googleapis.com/css?family=Titan+One);
+ </style>
+</defs>
+<clipPath id="cp2">
+<path d="M 0,0 L 1024,0 L1024,768 L 0,768 z M 0,0 L 1280,0 L 1280,960 L 0,960 z" fill-rule="evenodd">
+</path>
+</clipPath>
+<g clip-path="url(#cp2)">
+</g>
+<rect x="0" y="0" width="1280" height="960" opacity="1" fill="rgb(255,255,255)" fill-opacity="0" stroke="none">
+</rect>
+<text x="-95.5744857788086" y="7.46118912" style="font: normal 74.61189120000002px 'Titan One'" text-anchor="start" dy="29.49086608695653" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(512, 384)">React</text>
+<text x="-207.19256591796875" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(255, 255, 255)" stroke="none" transform="translate(492, 340)">ECMAScript2015</text>
+<text x="-124.74068450927734" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(255, 255, 255)" stroke="none" transform="translate(510, 436)">AngularJS</text>
+<text x="-124.5728759765625" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(526, 296)">ExpressJS</text>
+<text x="-85.02503967285156" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(510, 480)">gulp.js</text>
+<text x="-83.62660217285156" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(255, 255, 255)" stroke="none" transform="translate(520, 252)">jQuery</text>
+<text x="-91.54176330566406" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(372, 464) rotate(-251.04911698959768)">NodeJS</text>
+<text x="-79.8228530883789" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(255, 255, 255)" stroke="none" transform="translate(532, 528)">Redux</text>
+<text x="-71.73988342285156" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(560, 220)">Babel</text>
+<text x="-79.57113647460938" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One';font-weight: inherit;" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(394, 248) rotate(-200.69447211222723)">bower</text>
+<text x="-26.36988067626953" y="5.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="22.1181495652174" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(676, 384)">SASS</text>
+<text x="-26.189247131347656" y="15.59589184" style="font: normal 55.958918400000016px 'Titan One'" text-anchor="start" dy="42.1181495652174" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(654, 468)">npm</text>
+<text x="-155.58271026611328" y="3.73059456" style="font: normal 37.30594560000001px 'Titan One'" text-anchor="start" dy="14.745433043478265" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(480, 588) rotate(-155.10125177912414)">Underscore.js</text>
+<text x="-102.49154663085938" y="3.73059456" style="font: normal 37.30594560000001px 'Titan One'" text-anchor="start" dy="14.745433043478265" opacity="1" fill="rgb(255, 255, 255)" stroke="none" transform="translate(468, 176)">Backbone.js</text>
+<text x="-82.87342834472656" y="3.73059456" style="font: normal 37.30594560000001px 'Titan One'" text-anchor="start" dy="14.745433043478265" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(602, 564)">Mustache</text>
+<text x="-67.96890258789062" y="-40.73059456" style="font: normal 37.30594560000001px 'Titan One';" text-anchor="start" dy="14.745433043478265" opacity="1" fill="rgb(255, 255, 255)" stroke="none" transform="translate(700, 294) rotate(35.57331372052431)">Webpack</text>
+<text x="-40.831031799316406" y="12.73059456" style="font: normal 37.30594560000001px 'Titan One'" text-anchor="start" dy="14.745433043478265" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(696, 420)">Meteor</text>
+<text x="-41.57768249511719" y="21.86529728" style="font: normal 18.652972800000004px 'Titan One'" text-anchor="start" dy="7.372716521739132" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(336, 412) rotate(-281.59968208288774)">Bootstrap</text>
+<text x="-20.448646545410156" y="1.86529728" style="font: normal 18.652972800000004px 'Titan One'" text-anchor="start" dy="7.372716521739132" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(408, 468)">LESS</text>
+<text x="-13.495735168457031" y="1.86529728" style="font: normal 18.652972800000004px 'Titan One'" text-anchor="start" dy="7.372716521739132" opacity="1" fill="rgb(236, 64, 122)" stroke="none" transform="translate(384, 312) rotate(-46.17191654630006)">EJS</text>
+</svg>
