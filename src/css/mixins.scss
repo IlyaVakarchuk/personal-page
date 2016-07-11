@@ -26,6 +26,14 @@
   animation-delay: #{$value};
 }
 
+@mixin transform($value) {
+  -webkit-transform : #{$value};
+  -moz-transform : #{$value};
+  -ms-transform : #{$value};
+  -o-transform : #{$value};
+  transform : #{$value};
+}
+
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
@@ -65,5 +73,17 @@
   }
   100% {
     left : 25%;
+  }
+}
+
+@include keyframes(show-skills-cloud) {
+  0% {
+    @include transform('scale(0.1)');
+  }
+  50% {
+    @include transform('scale(3)');
+  }
+  100% {
+    @include transform('scale(2)');
   }
 }
