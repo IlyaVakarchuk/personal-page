@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-const About = class About extends Component {
+const Experience = class Experience extends Component {
 	constructor() {
 		super();
 
@@ -21,11 +21,13 @@ const About = class About extends Component {
 			stage : 'Web Developer',
 			place : 'NoveoGroup'
 		}]
+
 	}
 
 	render() {
 		return (
-			<div id='about-page'>
+			<div id='experience-page'>
+				<div className='intro'><div>my experience</div></div>
 				<div className='container'>
 					<div className='time-line'></div>
 					{this.experience.map(function(value, index) {
@@ -43,4 +45,4 @@ const About = class About extends Component {
 	}
 }
 
-export default About;
+export default Experience;

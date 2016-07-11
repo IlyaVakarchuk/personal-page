@@ -8,7 +8,7 @@ const Navigation = class Navigation extends Component {
 				<ul>
 					<li id="logo">vakarchuk</li>
 					<li className="navigation-section"><Link to="/home">home</Link><div></div></li>
-					<li className="navigation-section"><Link to="/about">about</Link><div></div></li>
+					<li className="navigation-section"><Link to="/experience">experience</Link><div></div></li>
 					<li className="navigation-section"><Link to="/skills">skills</Link><div></div></li>
 					<li className="navigation-section"><Link to="/projects">projects</Link><div></div></li>
 					<li className="navigation-section"><Link to="/contact">contact</Link><div></div></li>

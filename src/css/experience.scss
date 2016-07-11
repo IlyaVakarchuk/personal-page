@@ -1,8 +1,24 @@
-#about-page {
+#experience-page {
 	width: 100%;
 	height: 100%;
 	padding-top: 60px;
 	background:linear-gradient(77deg,#27b193,#86aad5);
+
+	.intro {
+		width: 100%;
+		height: 50px;
+
+		div {
+			width: 50%;
+			height: 100%;
+			margin: 0 auto;
+			color: #EC407A;
+			font-size: 64px;
+			text-align: center;
+			line-height: 50px;
+			text-transform: lowercase;
+		}
+	}
 
 	.container {
 		max-width: 940px;
@@ -32,6 +48,7 @@
 				border-top: 10px solid #EC407A;
 				position: relative;
 				display: block;
+				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
 				.title {
 					width: 100%;
@@ -55,8 +72,9 @@
 			&:nth-child(odd) {
 				.experience-item {
 					float: right;
-					right: 25%;
 	    		margin-right: -157px;
+	    		right: -150%;
+	    		@include animation('show-from-rigth 0.5s forwards linear'); 
 
 					&:before {
 			    	content: '';
@@ -76,8 +94,9 @@
 			&:nth-child(even) {
 				.experience-item {
 					float: left;
-					left: 25%;
+					left: -150%;
 	    		margin-left: -157px;
+	    		@include animation('show-from-left 0.5s forwards linear'); 
 
 					&:after {
 			    	content: '';
@@ -92,6 +111,14 @@
 			    	margin-top: -25px;
 			    }
 				}
+			}
+		}
+
+		@for $i from 1 through 4 {
+			.experience:nth-child(#{$i}) {
+				.experience-item {
+					@include animation-delay( $i * 0.2 + 's');
+				}	 
 			}
 		}
 	}

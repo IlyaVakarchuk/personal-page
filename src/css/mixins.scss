@@ -19,6 +19,13 @@
   animation: #{$value};
 }
 
+@mixin animation-delay($value) {
+  -webkit-animation-delay: #{$value};
+  -moz-animation-delay: #{$value};
+  -o-animation-delay: #{$value};
+  animation-delay: #{$value};
+}
+
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
@@ -40,5 +47,23 @@
   }
   100% {
     width : 100%;
+  }
+}
+
+@include keyframes(show-from-rigth) {
+  0% {
+    right: -150%;
+  }
+  100% {
+    right : 25%;
+  }
+}
+
+@include keyframes(show-from-left) {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left : 25%;
   }
 }
