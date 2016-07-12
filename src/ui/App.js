@@ -5,6 +5,7 @@ import MainPage from './MainPage';
 import Navigation from './Navigation';
 import Experience from './Experience';
 import Skills from './Skills';
+import Projects from './Projects';
 
 const AppLayout = class AppLayout extends Component {
 	render() {
@@ -31,7 +32,8 @@ export default class App extends Component {
         <Route path="/" component={ AppLayout } onEnter={ this.onCheck } >
 					<Route path="home" component={ MainPage }/>    
 					<Route path="experience" component={ Experience }/>  
-					<Route path="skills" component={ Skills }/>        	
+					<Route path="skills" component={ Skills }/>
+					<Route path="projects" component={ Projects }/>        	
         </Route>
       </Router>
 		)
