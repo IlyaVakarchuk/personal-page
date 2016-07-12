@@ -87,3 +87,12 @@
     @include transform('scale(2)');
   }
 }
+
+@include keyframes(show-site-section) {
+  0% {
+    top : -250px;
+  }
+  100% {
+    top : 0;
+  }
+}

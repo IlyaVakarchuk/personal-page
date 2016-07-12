@@ -11,130 +11,258 @@
 @import 'projects';
 @import 'contact';
 
-body {
-	margin: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	font-family: 'Source Sans Pro', sans-serif;
-	@include user-select('none');
+@media screen and (min-width: 940px) {
+	body {
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		font-family: 'Source Sans Pro', sans-serif;
+		@include user-select('none');
 
-	.dark-layer {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;	
-		opacity: 0.7;
-		z-index: 10;
-		background:linear-gradient(77deg,#27b193,#86aad5);
-	}
-
-	#navigation {
-		width: 100%;
-		height: 50px;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 11;
-
-		ul {
-			margin: 0;
+		.dark-layer {
+			width: 100%;
 			height: 100%;
-			text-align: right;
+			position: absolute;
+			top: 0;
+			left: 0;	
+			opacity: 0.7;
+			z-index: 10;
+			background:linear-gradient(77deg,#27b193,#86aad5);
+		}
 
-			ul.site-sections {
-				display: block;
+		#navigation {
+			width: 100%;
+			height: 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 11;
+
+			#navigation-menu {
+				display: none;
 			}
 
-			li {
+			ul {
+				margin: 0;
 				height: 100%;
-				display: inline-block;
-				line-height: 50px;
-				color: #fff;
-				position: relative;
+				text-align: right;
 
-				&#logo {
-					float: left;
-					font-size: 32px; 
-					color: #EC407A;
+				ul.site-sections {
+					display: block;
 				}
 
-				&.navigation-section {
-					text-transform: uppercase;
-					padding: 0 10px;
+				li {
+					height: 100%;
+					display: inline-block;
+					line-height: 50px;
+					color: #fff;
+					position: relative;
 
-					a {
-						text-decoration: none;
-						@include transition('color ease 0.5s');
-						
-						&:link, &:visited, &:active {
-		          color: #fff;
-		        }
+					&#logo {
+						float: left;
+						font-size: 32px; 
+						color: #EC407A;
 					}
 
-					div {
-						width: 0;
-				    height: 2px;
-				    position: relative;
-				    bottom: 5px;
-				    background-color: #EC407A;
-				    margin: 0 auto;
-				    @include transition('width ease 0.5s');
-					}
+					&.navigation-section {
+						text-transform: uppercase;
+						padding: 0 10px;
 
-					&:hover {
-						cursor: pointer;
-						
 						a {
-							color: #EC407A;
+							text-decoration: none;
+							@include transition('color ease 0.5s');
+							
+							&:link, &:visited, &:active {
+			          color: #fff;
+			        }
 						}
 
 						div {
-							width: 100%;
+							width: 0;
+					    height: 2px;
+					    position: relative;
+					    bottom: 5px;
+					    background-color: #EC407A;
+					    margin: 0 auto;
+					    @include transition('width ease 0.5s');
+						}
+
+						&:hover {
+							cursor: pointer;
+							
+							a {
+								color: #EC407A;
+							}
+
+							div {
+								width: 100%;
+							}
 						}
 					}
 				}
 			}
 		}
-	}
 
-	#main-wrap {
-		width: 100vw;
-		height: 100vh;
-
-		#wrap {
+		#main-wrap {
 			width: 100vw;
 			height: 100vh;
 
-			#experience-page, #skills-page, #projects-page, #contact-page {
-				.intro {
-					width: 100%;
-					font-family: 'Open Sans Condensed', sans-serif;
-					position: relative;
+			#wrap {
+				width: 100vw;
+				height: 100vh;
 
-					div { 
-						color: #EC407A;
-						text-align: center;
-						line-height: 50px;
-						padding: 10px 0;
+				#experience-page, #skills-page, #projects-page, #contact-page {
+					.intro {
+						width: 100%;
+						font-family: 'Open Sans Condensed', sans-serif;
+						position: relative;
+
+						div { 
+							color: #EC407A;
+							text-align: center;
+							line-height: 50px;
+							padding: 10px 0;
+						}
+
+						div.lvl-01 {
+							width: 50%;
+							font-size: 64px;
+							text-transform: lowercase;
+							font-weight: bold;
+						}
+
+						div.lvl-02 {
+							width: 80%;
+							font-size: 48px;
+							text-transform: capitalize;
+							font-weight: lighter;
+						}
 					}
+				}			
+			}
+		}
+	}
+}
 
-					div.lvl-01 {
-						width: 50%;
-						font-size: 64px;
-						text-transform: lowercase;
-						font-weight: bold;
-					}
+@media screen and (max-width: 650px) {
+	body {
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
+		font-family: 'Source Sans Pro', sans-serif;
+		@include user-select('none');
+		
+		#main-wrap {
+			width: 100vw;
+			height: 100vh;
 
-					div.lvl-02 {
-						width: 80%;
-						font-size: 48px;
-						text-transform: capitalize;
-						font-weight: lighter;
+			#wrap {
+				width: 100vw;
+				height: 100vh;
+			}
+		}
+
+		#navigation {
+			width: 100vw;
+			position: relative;
+			top: 0;
+			left: 0;
+			z-index: 11;
+
+			#navigation-menu {
+				display: block;
+				float: right;
+				display: block;
+				height: 30px;
+				height: 40px;
+				text-align: center;
+				margin-right: 15px;
+				position: relative;
+				z-index: 2;
+
+				i {
+					line-height: 40px;
+					color: #EC407A;
+					font-size: 24px;
+
+					&:hover {
+						cursor: pointer;
 					}
 				}
-			}			
+			}
+
+			ul {
+				padding: 0;
+				margin: 0;
+
+				li#logo {
+					height: 50px;
+					padding-left: 10px;
+					position: absolute;
+					font-size: 32px; 
+					left: 0;
+					color: #EC407A;
+					z-index: 2;
+				}
+
+				ul.site-sections {
+					display: none;
+					position: absolute;
+					margin: 0;
+					top: 0;
+					left: 0;
+					width: 100%;
+					background:linear-gradient(77deg,#27b193,#86aad5);
+					@include animation('show-site-section 0.4s forwards linear'); 
+
+					&.show {
+						display: block;
+					}
+
+					li.navigation-section {
+						text-transform: uppercase;
+						padding: 0 10px;
+						display: block;
+						width: 100%;
+						height: 50px;
+						text-align: center;
+						line-height: 50px;
+						a {
+							padding: 10px 0;
+							text-decoration: none;
+							@include transition('color ease 0.5s');
+							
+							&:link, &:visited, &:active {
+			          color: #fff;
+			        }
+						}
+
+						div {
+							width: 0;
+					    height: 2px;
+					    position: relative;
+					    bottom: 5px;
+					    background-color: #EC407A;
+					    margin: 0 auto;
+					    @include transition('width ease 0.5s');
+						}
+
+						&:hover {
+							cursor: pointer;
+							
+							a {
+								color: #EC407A;
+							}
+
+							div {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
