@@ -18,7 +18,10 @@ const Contact = class Contact extends Component {
   render() {
     return (
       <div id='contact-page'>
-        <div className='intro'></div>
+        <div className='intro'>
+          <div className='lvl-01'>contact to me</div>
+          <div className='lvl-02'>contact me if you have any ideas and suggestions</div>
+        </div>
         <div className='container'>
           <div className='mail-form'>
             <MailForm />

@@ -12,7 +12,10 @@ const Skills = class Skills extends Component {
 		let patterns = this.patterns;
 		return (
 			<div id='skills-page'>
-				<div className='intro'><div>my skills</div></div>
+				<div className='intro'>
+					<div className='lvl-01'>my skills</div>
+					<div className='lvl-02'>languages and technologies that I use</div>
+				</div>
 				<div className='container'>
 					<div id='table'>
 						<div className='technology'>

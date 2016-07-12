@@ -27,7 +27,10 @@ const Experience = class Experience extends Component {
 	render() {
 		return (
 			<div id='experience-page'>
-				<div className='intro'><div>my experience</div></div>
+				<div className='intro'>
+					<div className='lvl-01'>my experience</div>
+					<div className='lvl-02'>my education and work experience</div>
+				</div>
 				<div className='container'>
 					<div className='time-line'></div>
 					{this.experience.map(function(value, index) {

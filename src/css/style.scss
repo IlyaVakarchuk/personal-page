@@ -2,6 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,cyrillic-ext);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:normal);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
 @import 'mixins';
 @import 'main';
 @import 'experience';
@@ -103,7 +105,36 @@ body {
 
 		#wrap {
 			width: 100vw;
-			height: 100vh;			
+			height: 100vh;
+
+			#experience-page, #skills-page, #projects-page, #contact-page {
+				.intro {
+					width: 100%;
+					font-family: 'Open Sans Condensed', sans-serif;
+					position: relative;
+
+					div { 
+						color: #EC407A;
+						text-align: center;
+						line-height: 50px;
+						padding: 10px 0;
+					}
+
+					div.lvl-01 {
+						width: 50%;
+						font-size: 64px;
+						text-transform: lowercase;
+						font-weight: bold;
+					}
+
+					div.lvl-02 {
+						width: 80%;
+						font-size: 48px;
+						text-transform: capitalize;
+						font-weight: lighter;
+					}
+				}
+			}			
 		}
 	}
 }
