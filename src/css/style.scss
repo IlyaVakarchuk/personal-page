@@ -161,6 +161,33 @@
 			#wrap {
 				width: 100vw;
 				height: 100vh;
+
+				#experience-page, #skills-page, #projects-page, #contact-page {
+					.intro {
+						width: 100%;
+						font-family: 'Open Sans Condensed', sans-serif;
+						position: relative;
+
+						div { 
+							color: #EC407A;
+							text-align: center;
+						}
+
+						div.lvl-01 {
+							width: 50%;
+							font-size: 7vw;
+							text-transform: lowercase;
+							font-weight: bold;
+						}
+
+						div.lvl-02 {
+							width: 80%;
+							font-size: 5vw;
+							text-transform: capitalize;
+							font-weight: lighter;
+						}
+					}
+				}
 			}
 		}
 
@@ -169,7 +196,7 @@
 			position: relative;
 			top: 0;
 			left: 0;
-			z-index: 11;
+			z-index: 12;
 
 			#navigation-menu {
 				display: block;
