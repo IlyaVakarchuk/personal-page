@@ -76,6 +76,15 @@
   }
 }
 
+@include keyframes(show-from-bottom) {
+  0% {
+    bottom: -150vh;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
 @include keyframes(show-skills-cloud) {
   0% {
     @include transform('scale(0.1)');
