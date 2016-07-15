@@ -145,22 +145,18 @@
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 940px) {
 	body {
 		margin: 0;
 		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
 		font-family: 'Source Sans Pro', sans-serif;
 		@include user-select('none');
 		
 		#main-wrap {
 			width: 100vw;
-			height: 100vh;
 
 			#wrap {
 				width: 100vw;
-				height: 100vh;
 
 				#experience-page, #skills-page, #projects-page, #contact-page {
 					.intro {
