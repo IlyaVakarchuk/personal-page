@@ -97,6 +97,19 @@
   }
 }
 
+
+@include keyframes(show-skills-cloud-mobile) {
+  0% {
+    @include transform('scale(0.1)');
+  }
+  50% {
+    @include transform('scale(3)');
+  }
+  100% {
+    @include transform('scale(1.7)');
+  }
+}
+
 @include keyframes(show-site-section) {
   0% {
     top : -250px;
