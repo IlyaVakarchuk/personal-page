@@ -99,10 +99,10 @@
 				}
 			}
 
-			@for $i from 1 through 4 {
+			@for $i from 1 through 5 {
 				.experience:nth-child(#{$i}) {
 					.experience-item {
-						@include animation-delay( $i * 0.2 + 's');
+						@include animation-delay( $i * 0.3 + 's');
 					}	 
 				}
 			}
@@ -147,7 +147,7 @@
 					display: block;
 					bottom: -150vh;
 					box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-					//@include animation('show-from-bottom 1.5s forwards linear'); 
+					@include animation('show-from-bottom 1.5s forwards linear'); 
 
 
 					.title {
@@ -170,11 +170,10 @@
 				}
 			}
 
-			@for $i from 1 through 4 {
-				.experience {
+			@for $i from 1 through 5 {
+				.experience:nth-child(#{$i}) {
 					.experience-item {
-						//@include animation-delay( $i * 0.4 + 's');
-						@include animation('show-from-bottom 1.5s forwards linear ' + $i * 0.4 + 's'); 
+						@include animation-delay($i / 3.5 + 's');
 					}	 
 				}
 			}

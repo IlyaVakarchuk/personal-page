@@ -242,6 +242,7 @@
 					left: 0;
 					width: 100%;
 					background:linear-gradient(77deg,#27b193,#86aad5);
+					box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 					@include animation('show-site-section 0.4s forwards linear'); 
 
 					&.show {
