@@ -8,12 +8,16 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 
+import { Scrollbars } from 'react-custom-scrollbars';
+
 const AppLayout = class AppLayout extends Component {
 	render() {
 		return (
 			<div id="wrap">
 				<Navigation />
+				<Scrollbars style={{ width: '100%' }}>
 				{ this.props.children }
+				</Scrollbars>
 			</div>
 		)
 	}

@@ -149,14 +149,18 @@
 	body {
 		margin: 0;
 		width: 100vw;
+		height: 100vh;
+		overflow: hidden;
 		font-family: 'Source Sans Pro', sans-serif;
 		@include user-select('none');
 		
 		#main-wrap {
 			width: 100vw;
+			height: 100vh;
 
 			#wrap {
 				width: 100vw;
+				height: 100vh;
 
 				#experience-page, #skills-page, #projects-page, #contact-page {
 					.intro {
@@ -196,7 +200,7 @@
 
 		#navigation {
 			width: 100vw;
-			position: relative;
+			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 12;
