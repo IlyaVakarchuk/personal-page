@@ -15,12 +15,10 @@ const AppLayout = class AppLayout extends Component {
 	render() {
 		return (
 			<div id="wrap">
-				<Navigation />
+				<Navigation reload={true}/>
 				<ReactCSSTransitionGroup 
 						transitionName='change-section' 
 						component='div' 
-						transitionAppear={true} 
-						transitionAppearTimeout={1500} 
 						transitionEnterTimeout={1500} 
 						transitionLeaveTimeout={300}>
           { 

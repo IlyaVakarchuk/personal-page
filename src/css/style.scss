@@ -39,15 +39,6 @@
 		  transition: opacity 300ms ease-in;
 		}
 
-		.change-section-appear {
-		  opacity: 0.01;
-		}
-
-		.change-section-appear.change-section-appear-active {
-		  opacity: 1;
-		  transition: opacity 1500s ease-in;
-		}
-
 		.dark-layer {
 			width: 100%;
 			height: 100%;
@@ -209,16 +200,6 @@
 		  opacity: 0.01;
 		  transition: opacity 300ms ease-in;
 		}
-
-		.change-section-appear {
-		  opacity: 0.01;
-		}
-
-		.change-section-appear.change-section-appear-active {
-		  opacity: 1;
-		  transition: opacity 1500s ease-in;
-		}
-
 
 		#main-wrap {
 			width: 100vw;

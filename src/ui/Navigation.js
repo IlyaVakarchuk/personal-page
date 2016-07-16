@@ -39,11 +39,17 @@ const Navigation = class Navigation extends Component {
 	}
 
 	onShowList () {
-		this.setState({sectionList : true, navigationAction : 'show' })
+		this.setState({sectionList : true, navigationAction : 'show' });
 	}
 
 	onCloseList () {
-		this.setState({sectionList : false, navigationAction : 'hide' })	
+		this.setState({sectionList : false, navigationAction : 'hide' });
+	}
+
+	componentWillReceiveProps (nextProps) {
+		if (nextProps.reload) {
+			this.setState({sectionList : false, navigationAction : 'hide' });
+		}
 	}
 
 	render() {
