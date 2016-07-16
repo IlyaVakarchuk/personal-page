@@ -9,9 +9,9 @@ const SiteSections = class SiteSections extends Component {
 	render () {
 		var classValue = '';
 		if (this.props.showList) {
-			classValue ='site-sections show';
+			classValue ='site-sections ' + this.props.navigationAction;
 		} else {
-			classValue ='site-sections';
+			classValue ='site-sections ' + this.props.navigationAction;		
 		}
 		return (
 			 <ul className={classValue}> 
@@ -30,7 +30,8 @@ const Navigation = class Navigation extends Component {
 		super();
 
 		this.state = {
-			sectionList : false
+			sectionList : false,
+			navigationAction : ''
 		}
 
 		this.onShowList = this.onShowList.bind(this);
@@ -38,11 +39,11 @@ const Navigation = class Navigation extends Component {
 	}
 
 	onShowList () {
-		this.setState({sectionList : 'showshow' })
+		this.setState({sectionList : true, navigationAction : 'show' })
 	}
 
 	onCloseList () {
-		this.setState({sectionList : false })	
+		this.setState({sectionList : false, navigationAction : 'hide' })	
 	}
 
 	render() {
@@ -50,11 +51,11 @@ const Navigation = class Navigation extends Component {
 			<div id='navigation'>
 				<ul>
 					<li id="logo">vakarchuk</li>	
-					<SiteSections showList={this.state.sectionList}/>
-						<div id='navigation-menu'>
-							{ this.state.sectionList ? <i className='fa fa-times' aria-hidden='true' onClick={ this.onCloseList }></i> : 
-							 <i className='fa fa-bars' aria-hidden='true' onClick={ this.onShowList }></i> }
-						</div>		
+					<SiteSections navigationAction={ this.state.navigationAction } showList={this.state.sectionList}/>
+					<div id='navigation-menu'>
+						{ this.state.sectionList ? <i className='fa fa-times' aria-hidden='true' onClick={ this.onCloseList }></i> : 
+						 <i className='fa fa-bars' aria-hidden='true' onClick={ this.onShowList }></i> }
+					</div>		
 				</ul>	
 			</div>
 		)
