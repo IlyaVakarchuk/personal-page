@@ -15,9 +15,7 @@ const AppLayout = class AppLayout extends Component {
 		return (
 			<div id="wrap">
 				<Navigation />
-				<Scrollbars style={{ width: '100%' }}>
 				{ this.props.children }
-				</Scrollbars>
 			</div>
 		)
 	}

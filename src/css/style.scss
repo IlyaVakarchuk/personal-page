@@ -15,9 +15,10 @@
 	body {
 		margin: 0;
 		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
+		min-height: 100vh;
+		overflow-x: hidden;
 		font-family: 'Source Sans Pro', sans-serif;
+		background:linear-gradient(77deg,#27b193,#86aad5);
 		@include user-select('none');
 
 		.dark-layer {
@@ -139,6 +140,15 @@
 							font-weight: lighter;
 						}
 					}
+
+					.container {
+						max-width: 940px;
+						min-width: 940px;
+						width: 80%;
+						margin: 0 auto;
+						position: relative;
+						margin-top: 30px;
+					}
 				}			
 			}
 		}
@@ -149,20 +159,22 @@
 	body {
 		margin: 0;
 		width: 100vw;
-		height: 100vh;
-		overflow: hidden;
+		min-height: 100vh;
+		overflow-x: hidden;
 		font-family: 'Source Sans Pro', sans-serif;
+		background:linear-gradient(77deg,#27b193,#86aad5);
 		@include user-select('none');
-		
+
 		#main-wrap {
 			width: 100vw;
-			height: 100vh;
+			height: 100%;
 
 			#wrap {
 				width: 100vw;
-				height: 100vh;
+				height: 100%;
 
 				#experience-page, #skills-page, #projects-page, #contact-page {
+					
 					.intro {
 						width: 100%;
 						font-family: 'Open Sans Condensed', sans-serif;
@@ -193,6 +205,7 @@
 						margin: 0 auto;
 						position: relative;
 						margin-top: 30px;
+						margin-bottom: 30px;
 					}
 				}
 			}
@@ -250,10 +263,17 @@
 					width: 100%;
 					background:linear-gradient(77deg,#27b193,#86aad5);
 					box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-					@include animation('show-site-section 0.4s forwards linear'); 
+
+					&.show, &.hide {
+						display: block;
+					}
 
 					&.show {
-						display: block;
+						@include animation('show-site-section 0.4s forwards linear');
+					}
+
+					&.hide {
+						@include animation('hide-site-section 0.4s forwards linear');	
 					}
 
 					li.navigation-section {
