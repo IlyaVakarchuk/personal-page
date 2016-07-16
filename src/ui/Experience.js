@@ -6,15 +6,15 @@ const Experience = class Experience extends Component {
 
 		this.experience = [{
 			years : '2011 - 2015',
-			stage : 'Bachelor of Inpormation Technology',
+			stage : 'Bachelor of Information Technology',
 			place : 'SibSUTIS'
 		}, {
 			years : '2014 - 2014',
-			stage : 'QA - Enginee',
+			stage : 'QA - Engineer',
 			place : 'PinPay Express'
 		}, {
 			years : '2015 - 2015',
-			stage : 'Front-end Develop',
+			stage : 'Front-end Developer',
 			place : 'AcademMedia'
 		}, {
 			years : '2016',

@@ -8,7 +8,7 @@ const MailForm = class MailForm extends Component {
         <input className='email' type='email' placeholder="Your's email" />
         <input className='object' type='object' placeholder="Object of message" />
         <textarea></textarea>
-        <input type='submit' />
+        <input type='submit' value='Send' />
       </form>
     )
   }
