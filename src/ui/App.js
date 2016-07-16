@@ -9,13 +9,26 @@ import Projects from './Projects';
 import Contact from './Contact';
 
 import { Scrollbars } from 'react-custom-scrollbars';
+import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup';
 
 const AppLayout = class AppLayout extends Component {
 	render() {
 		return (
 			<div id="wrap">
 				<Navigation />
-				{ this.props.children }
+				<ReactCSSTransitionGroup 
+						transitionName='change-section' 
+						component='div' 
+						transitionAppear={true} 
+						transitionAppearTimeout={1500} 
+						transitionEnterTimeout={1500} 
+						transitionLeaveTimeout={300}>
+          { 
+         		React.cloneElement(this.props.children, {
+      				key: this.props.location.pathname
+    				})
+         	}
+        </ReactCSSTransitionGroup>
 			</div>
 		)
 	}

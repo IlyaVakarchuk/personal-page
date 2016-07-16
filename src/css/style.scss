@@ -21,6 +21,33 @@
 		background:linear-gradient(77deg,#27b193,#86aad5);
 		@include user-select('none');
 
+		.change-section-enter {
+		  opacity: 0.01;
+		}
+
+		.change-section-enter.change-section-enter-active {
+		  opacity: 1;
+		  transition: opacity 1500ms ease-in;
+		}
+
+		.change-section-leave {
+		  opacity: 1;
+		}
+
+		.change-section-leave.change-section-leave-active {
+		  opacity: 0.01;
+		  transition: opacity 300ms ease-in;
+		}
+
+		.change-section-appear {
+		  opacity: 0.01;
+		}
+
+		.change-section-appear.change-section-appear-active {
+		  opacity: 1;
+		  transition: opacity 1500s ease-in;
+		}
+
 		.dark-layer {
 			width: 100%;
 			height: 100%;
@@ -164,6 +191,34 @@
 		font-family: 'Source Sans Pro', sans-serif;
 		background:linear-gradient(77deg,#27b193,#86aad5);
 		@include user-select('none');
+
+		.change-section-enter {
+		  opacity: 0.01;
+		}
+
+		.change-section-enter.change-section-enter-active {
+		  opacity: 1;
+		  transition: opacity 1500ms ease-in;
+		}
+
+		.change-section-leave {
+		  opacity: 1;
+		}
+
+		.change-section-leave.change-section-leave-active {
+		  opacity: 0.01;
+		  transition: opacity 300ms ease-in;
+		}
+
+		.change-section-appear {
+		  opacity: 0.01;
+		}
+
+		.change-section-appear.change-section-appear-active {
+		  opacity: 1;
+		  transition: opacity 1500s ease-in;
+		}
+
 
 		#main-wrap {
 			width: 100vw;
