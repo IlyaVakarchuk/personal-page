@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
+import DarkLayer from './DarkLayer';
 
 const MailForm = class MailForm extends Component {
   constructor() {
@@ -37,6 +38,13 @@ const MailForm = class MailForm extends Component {
 
   sendMail(e) {
     e.preventDefault();
+    let mailData = { 'authorName' : this.state.valueAuthorName,
+      'authorEmail' : this.state.valueAuthorEmail,
+      'authorObject' : this.state.valueAuthorObject,
+      'authorText' : this.state.valueAuthorText }
+    $.post('api/send-mail', mailData, function( data ) {
+      console.log(data)
+    });
   }
   render() {
     return (
@@ -60,6 +68,7 @@ const Contact = class Contact extends Component {
           <div className='lvl-02'>contact me if you have any ideas and suggestions</div>
         </div>
         <div className='container'>
+          <DarkLayer />
           <div className='mail-form'>
             <MailForm />
           </div>

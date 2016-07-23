@@ -34,6 +34,11 @@
   transform : #{$value};
 }
 
+@mixin filter($value) {
+  -webkit-filter : #{$value};
+  filter : #{$value};
+}
+
 @mixin keyframes($animation-name) {
   @-webkit-keyframes #{$animation-name} {
     @content;
